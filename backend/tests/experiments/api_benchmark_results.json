@@ -1,0 +1,209 @@
+{
+  "audio": "/home/watercry/Disk_C/Data/audio-separation/data/test_audio/test_5s.mp3",
+  "gpu_results": [
+    {
+      "model": "demucs",
+      "status": "OK",
+      "time_sec": 0.74,
+      "zip_size_kb": 1616.5,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9665,
+        "rms": 0.1428
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 1.0,
+        "rms": 0.2306
+      }
+    },
+    {
+      "model": "demucs_ft",
+      "status": "OK",
+      "time_sec": 0.76,
+      "zip_size_kb": 1616.2,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9917,
+        "rms": 0.1419
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 1.0,
+        "rms": 0.2308
+      }
+    },
+    {
+      "model": "bs_roformer",
+      "status": "OK",
+      "time_sec": 2.95,
+      "zip_size_kb": 1584.0,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.1272
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.1873
+      }
+    },
+    {
+      "model": "melband_roformer",
+      "status": "OK",
+      "time_sec": 1.96,
+      "zip_size_kb": 1584.5,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.1285
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.19
+      }
+    }
+  ],
+  "cpu_results": [
+    {
+      "model": "demucs",
+      "status": "OK",
+      "time_sec": 2.21,
+      "zip_size_kb": 1618.2,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9922,
+        "rms": 0.1427
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 1.0,
+        "rms": 0.2307
+      }
+    },
+    {
+      "model": "demucs_ft",
+      "status": "OK",
+      "time_sec": 7.36,
+      "zip_size_kb": 1616.1,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9805,
+        "rms": 0.1424
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 1.0,
+        "rms": 0.2298
+      }
+    },
+    {
+      "model": "bs_roformer",
+      "status": "OK",
+      "time_sec": 26.0,
+      "zip_size_kb": 1584.2,
+      "files": [
+        "vocals.wav",
+        "instrumental.wav"
+      ],
+      "has_vocals": true,
+      "has_instrumental": true,
+      "vocals": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.131
+      },
+      "instrumental": {
+        "samples": 220655,
+        "channels": 2,
+        "sr": 44100,
+        "duration_sec": 5.0,
+        "max_abs": 0.9,
+        "rms": 0.1848
+      }
+    },
+    {
+      "model": "melband_roformer",
+      "status": "FAILED",
+      "error": "{\"detail\":\"Separation failed: Could not identify vocal/instrumental from output files: []\"}",
+      "time_sec": 15.63675651999074
+    }
+  ]
+}

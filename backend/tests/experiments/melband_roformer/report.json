@@ -1,0 +1,881 @@
+{
+  "model": "melband_roformer",
+  "display_name": "MelBand RoFormer (ViperX-1143)",
+  "description": "Mel-Band RoFormer \u2014 best vocal separation quality",
+  "num_tracks": 50,
+  "aggregate": {
+    "instrumental": {
+      "SDR_median": 15.041221197419425,
+      "SDR_mean": 14.912973097768036,
+      "SDR_std": 3.950321000301851,
+      "SIR_median": Infinity,
+      "SAR_median": 15.273323450215205
+    },
+    "vocals": {
+      "SDR_median": 10.177803280031815,
+      "SDR_mean": 9.995846062548443,
+      "SDR_std": 3.810221208612131,
+      "SIR_median": Infinity,
+      "SAR_median": 10.25141577922289
+    }
+  },
+  "performance": {
+    "total_audio_seconds": 340.0000000000003,
+    "total_processing_seconds": 70.58118438720703,
+    "avg_per_track_seconds": 1.4116236877441406,
+    "realtime_factor": 4.817147841197546,
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "tracks": [
+    {
+      "track": "AM Contra - Heart Peripheral",
+      "duration": 6.8,
+      "time": 1.411201000213623,
+      "results": {
+        "vocals": {
+          "SDR": 13.534922229883335,
+          "SIR": Infinity,
+          "SAR": 13.537764393267889
+        },
+        "instrumental": {
+          "SDR": 15.893308127814713,
+          "SIR": Infinity,
+          "SAR": 16.32519382728458
+        }
+      }
+    },
+    {
+      "track": "Al James - Schoolboy Facination",
+      "duration": 6.8,
+      "time": 1.422229290008545,
+      "results": {
+        "vocals": {
+          "SDR": 10.287766662431768,
+          "SIR": Infinity,
+          "SAR": 10.031341430395251
+        },
+        "instrumental": {
+          "SDR": 11.092753999708448,
+          "SIR": Infinity,
+          "SAR": 11.12218036403178
+        }
+      }
+    },
+    {
+      "track": "Angels In Amplifiers - I'm Alright",
+      "duration": 6.8,
+      "time": 1.3943006992340088,
+      "results": {
+        "vocals": {
+          "SDR": 12.113003565203122,
+          "SIR": Infinity,
+          "SAR": 11.627661635079836
+        },
+        "instrumental": {
+          "SDR": 13.837446959771464,
+          "SIR": Infinity,
+          "SAR": 13.774374946732644
+        }
+      }
+    },
+    {
+      "track": "Arise - Run Run Run",
+      "duration": 6.8,
+      "time": 1.4228358268737793,
+      "results": {
+        "vocals": {
+          "SDR": 13.285645375856474,
+          "SIR": Infinity,
+          "SAR": 13.027974279334046
+        },
+        "instrumental": {
+          "SDR": 21.754967995195063,
+          "SIR": Infinity,
+          "SAR": 21.808883545165685
+        }
+      }
+    },
+    {
+      "track": "BKS - Bulldozer",
+      "duration": 6.8,
+      "time": 1.4216718673706055,
+      "results": {
+        "vocals": {
+          "SDR": 7.155632076073604,
+          "SIR": Infinity,
+          "SAR": 7.829042836921612
+        },
+        "instrumental": {
+          "SDR": 12.975832488600652,
+          "SIR": Infinity,
+          "SAR": 13.723021030134136
+        }
+      }
+    },
+    {
+      "track": "BKS - Too Much",
+      "duration": 6.8,
+      "time": 1.4159376621246338,
+      "results": {
+        "vocals": {
+          "SDR": 11.986574490311062,
+          "SIR": Infinity,
+          "SAR": 11.91921338319763
+        },
+        "instrumental": {
+          "SDR": 15.744509782314289,
+          "SIR": Infinity,
+          "SAR": 15.747483929257372
+        }
+      }
+    },
+    {
+      "track": "Ben Carrigan - We'll Talk About It All Tonight",
+      "duration": 6.8,
+      "time": 1.4221737384796143,
+      "results": {
+        "vocals": {
+          "SDR": 7.716700724821128,
+          "SIR": Infinity,
+          "SAR": 7.421812906329809
+        },
+        "instrumental": {
+          "SDR": 16.616388829054678,
+          "SIR": Infinity,
+          "SAR": 16.363916988874667
+        }
+      }
+    },
+    {
+      "track": "Bobby Nobody - Stitch Up",
+      "duration": 6.8,
+      "time": 1.3926820755004883,
+      "results": {
+        "vocals": {
+          "SDR": 11.660994778468071,
+          "SIR": Infinity,
+          "SAR": 11.679253480283844
+        },
+        "instrumental": {
+          "SDR": 16.56399944570883,
+          "SIR": Infinity,
+          "SAR": 16.52072866281451
+        }
+      }
+    },
+    {
+      "track": "Buitraker - Revo X",
+      "duration": 6.8,
+      "time": 1.3931610584259033,
+      "results": {
+        "vocals": {
+          "SDR": 5.815502558378537,
+          "SIR": Infinity,
+          "SAR": 5.039977356696935
+        },
+        "instrumental": {
+          "SDR": 13.987107471206015,
+          "SIR": Infinity,
+          "SAR": 14.058682771803182
+        }
+      }
+    },
+    {
+      "track": "Carlos Gonzalez - A Place For Us",
+      "duration": 6.8,
+      "time": 1.4121549129486084,
+      "results": {
+        "vocals": {
+          "SDR": 8.791195227860474,
+          "SIR": Infinity,
+          "SAR": 8.793663347647518
+        },
+        "instrumental": {
+          "SDR": 8.513477992976282,
+          "SIR": Infinity,
+          "SAR": 8.199646626815351
+        }
+      }
+    },
+    {
+      "track": "Cristina Vane - So Easy",
+      "duration": 6.8,
+      "time": 1.4188692569732666,
+      "results": {
+        "vocals": {
+          "SDR": 17.479647118294963,
+          "SIR": Infinity,
+          "SAR": 17.659643660862763
+        },
+        "instrumental": {
+          "SDR": 22.71739461187508,
+          "SIR": Infinity,
+          "SAR": 22.738218370195288
+        }
+      }
+    },
+    {
+      "track": "Detsky Sad - Walkie Talkie",
+      "duration": 6.8,
+      "time": 1.4057910442352295,
+      "results": {
+        "vocals": {
+          "SDR": 13.008713451092593,
+          "SIR": Infinity,
+          "SAR": 12.355520011077886
+        },
+        "instrumental": {
+          "SDR": 15.465372029951912,
+          "SIR": Infinity,
+          "SAR": 15.250196588875921
+        }
+      }
+    },
+    {
+      "track": "Enda Reilly - Cur An Long Ag Seol",
+      "duration": 6.8,
+      "time": 1.4444727897644043,
+      "results": {
+        "vocals": {
+          "SDR": 14.775102284431652,
+          "SIR": Infinity,
+          "SAR": 15.49541667946362
+        },
+        "instrumental": {
+          "SDR": 15.538628900999143,
+          "SIR": Infinity,
+          "SAR": 17.115090966806356
+        }
+      }
+    },
+    {
+      "track": "Forkupines - Semantics",
+      "duration": 6.8,
+      "time": 1.4287762641906738,
+      "results": {
+        "vocals": {
+          "SDR": 9.790970755752785,
+          "SIR": Infinity,
+          "SAR": 9.65111688789589
+        },
+        "instrumental": {
+          "SDR": 13.62845887224971,
+          "SIR": Infinity,
+          "SAR": 13.744263939946501
+        }
+      }
+    },
+    {
+      "track": "Georgia Wonder - Siren",
+      "duration": 6.8,
+      "time": 1.4321708679199219,
+      "results": {
+        "vocals": {
+          "SDR": 9.167867700156854,
+          "SIR": Infinity,
+          "SAR": 8.37290788911723
+        },
+        "instrumental": {
+          "SDR": 11.464370815278686,
+          "SIR": Infinity,
+          "SAR": 11.185222399992075
+        }
+      }
+    },
+    {
+      "track": "Girls Under Glass - We Feel Alright",
+      "duration": 6.8,
+      "time": 1.392261266708374,
+      "results": {
+        "vocals": {
+          "SDR": 6.545545681422211,
+          "SIR": Infinity,
+          "SAR": 5.376203671523064
+        },
+        "instrumental": {
+          "SDR": 10.99419650114338,
+          "SIR": Infinity,
+          "SAR": 11.082562946357578
+        }
+      }
+    },
+    {
+      "track": "Hollow Ground - Ill Fate",
+      "duration": 6.8,
+      "time": 1.4158196449279785,
+      "results": {
+        "vocals": {
+          "SDR": 7.694277976415007,
+          "SIR": Infinity,
+          "SAR": 6.284903538359947
+        },
+        "instrumental": {
+          "SDR": 14.058113445906859,
+          "SIR": Infinity,
+          "SAR": 14.611651286855087
+        }
+      }
+    },
+    {
+      "track": "James Elder & Mark M Thompson - The English Actor",
+      "duration": 6.8,
+      "time": 1.4079506397247314,
+      "results": {
+        "vocals": {
+          "SDR": 7.109908070541351,
+          "SIR": Infinity,
+          "SAR": 7.323508543561438
+        },
+        "instrumental": {
+          "SDR": 9.53071240685649,
+          "SIR": Infinity,
+          "SAR": 9.169634341353856
+        }
+      }
+    },
+    {
+      "track": "Juliet's Rescue - Heartbeats",
+      "duration": 6.8,
+      "time": 1.4033129215240479,
+      "results": {
+        "vocals": {
+          "SDR": 12.795228068172744,
+          "SIR": Infinity,
+          "SAR": 12.805466860857457
+        },
+        "instrumental": {
+          "SDR": 19.612447662044,
+          "SIR": Infinity,
+          "SAR": 19.862542953451893
+        }
+      }
+    },
+    {
+      "track": "Little Chicago's Finest - My Own",
+      "duration": 6.8,
+      "time": 1.4045734405517578,
+      "results": {
+        "vocals": {
+          "SDR": 9.817049406375627,
+          "SIR": Infinity,
+          "SAR": 9.902022098724302
+        },
+        "instrumental": {
+          "SDR": 16.305511440575827,
+          "SIR": Infinity,
+          "SAR": 16.31941706544912
+        }
+      }
+    },
+    {
+      "track": "Louis Cressy Band - Good Time",
+      "duration": 6.8,
+      "time": 1.3965694904327393,
+      "results": {
+        "vocals": {
+          "SDR": 11.739573156543457,
+          "SIR": Infinity,
+          "SAR": 11.343145159746701
+        },
+        "instrumental": {
+          "SDR": 15.706847347285608,
+          "SIR": Infinity,
+          "SAR": 15.665317075591064
+        }
+      }
+    },
+    {
+      "track": "Lyndsey Ollard - Catching Up",
+      "duration": 6.8,
+      "time": 1.4271049499511719,
+      "results": {
+        "vocals": {
+          "SDR": 14.542433195049465,
+          "SIR": Infinity,
+          "SAR": 14.678257659063272
+        },
+        "instrumental": {
+          "SDR": 16.493076418336678,
+          "SIR": Infinity,
+          "SAR": 16.830198637288206
+        }
+      }
+    },
+    {
+      "track": "M.E.R.C. Music - Knockout",
+      "duration": 6.8,
+      "time": 1.3930776119232178,
+      "results": {
+        "vocals": {
+          "SDR": 9.904037486439181,
+          "SIR": Infinity,
+          "SAR": 9.968049710793476
+        },
+        "instrumental": {
+          "SDR": 12.149425836051385,
+          "SIR": Infinity,
+          "SAR": 12.28358548133705
+        }
+      }
+    },
+    {
+      "track": "Moosmusic - Big Dummy Shake",
+      "duration": 6.8,
+      "time": 1.4061081409454346,
+      "results": {
+        "vocals": {
+          "SDR": 14.46340568015999,
+          "SIR": Infinity,
+          "SAR": 15.474043468229558
+        },
+        "instrumental": {
+          "SDR": 16.097563683403784,
+          "SIR": Infinity,
+          "SAR": 17.82974738183671
+        }
+      }
+    },
+    {
+      "track": "Motor Tapes - Shore",
+      "duration": 6.8,
+      "time": 1.4220919609069824,
+      "results": {
+        "vocals": {
+          "SDR": 0.8567031673299148,
+          "SIR": Infinity,
+          "SAR": -4.170168064410957
+        },
+        "instrumental": {
+          "SDR": 11.746501641596751,
+          "SIR": Infinity,
+          "SAR": 9.378971065417119
+        }
+      }
+    },
+    {
+      "track": "Mu - Too Bright",
+      "duration": 6.8,
+      "time": 1.3972234725952148,
+      "results": {
+        "vocals": {
+          "SDR": 16.27888930796699,
+          "SIR": Infinity,
+          "SAR": 15.989689747220666
+        },
+        "instrumental": {
+          "SDR": 18.98752757128365,
+          "SIR": Infinity,
+          "SAR": 20.63666516159935
+        }
+      }
+    },
+    {
+      "track": "Nerve 9 - Pray For The Rain",
+      "duration": 6.8,
+      "time": 1.4045908451080322,
+      "results": {
+        "vocals": {
+          "SDR": 9.542236384445403,
+          "SIR": Infinity,
+          "SAR": 9.824775301583388
+        },
+        "instrumental": {
+          "SDR": 10.982093968751567,
+          "SIR": Infinity,
+          "SAR": 11.01833458059398
+        }
+      }
+    },
+    {
+      "track": "PR - Happy Daze",
+      "duration": 6.8,
+      "time": 1.4025325775146484,
+      "results": {
+        "vocals": {
+          "SDR": 1.7174182137981429,
+          "SIR": Infinity,
+          "SAR": 2.7129157005103406
+        },
+        "instrumental": {
+          "SDR": 27.684927573294654,
+          "SIR": Infinity,
+          "SAR": 28.122310452630025
+        }
+      }
+    },
+    {
+      "track": "PR - Oh No",
+      "duration": 6.8,
+      "time": 1.4132628440856934,
+      "results": {
+        "vocals": {
+          "SDR": 1.710394966745709,
+          "SIR": Infinity,
+          "SAR": 3.3212301621432028
+        },
+        "instrumental": {
+          "SDR": 8.941924460182022,
+          "SIR": Infinity,
+          "SAR": 20.504265850615703
+        }
+      }
+    },
+    {
+      "track": "Punkdisco - Oral Hygiene",
+      "duration": 6.8,
+      "time": 1.3983845710754395,
+      "results": {
+        "vocals": {
+          "SDR": 12.612314590059333,
+          "SIR": Infinity,
+          "SAR": 12.766544754267503
+        },
+        "instrumental": {
+          "SDR": 18.423234637060908,
+          "SIR": Infinity,
+          "SAR": 18.655851400676053
+        }
+      }
+    },
+    {
+      "track": "Raft Monk - Tiring",
+      "duration": 6.8,
+      "time": 1.3999192714691162,
+      "results": {
+        "vocals": {
+          "SDR": 7.711045277293638,
+          "SIR": Infinity,
+          "SAR": 7.21706967359362
+        },
+        "instrumental": {
+          "SDR": 13.816014527059092,
+          "SIR": Infinity,
+          "SAR": 14.045748695319842
+        }
+      }
+    },
+    {
+      "track": "Sambasevam Shanmugam - Kaathaadi",
+      "duration": 6.8,
+      "time": 1.4275400638580322,
+      "results": {
+        "vocals": {
+          "SDR": 14.10111497126337,
+          "SIR": Infinity,
+          "SAR": 13.964478493606363
+        },
+        "instrumental": {
+          "SDR": 19.549691899673807,
+          "SIR": Infinity,
+          "SAR": 20.054249531410086
+        }
+      }
+    },
+    {
+      "track": "Secretariat - Borderline",
+      "duration": 6.8,
+      "time": 1.408858060836792,
+      "results": {
+        "vocals": {
+          "SDR": 10.930529531876308,
+          "SIR": Infinity,
+          "SAR": 10.78230057815896
+        },
+        "instrumental": {
+          "SDR": 12.10028560445588,
+          "SIR": Infinity,
+          "SAR": 12.187482106952716
+        }
+      }
+    },
+    {
+      "track": "Secretariat - Over The Top",
+      "duration": 6.8,
+      "time": 1.3892691135406494,
+      "results": {
+        "vocals": {
+          "SDR": 12.266398933831564,
+          "SIR": Infinity,
+          "SAR": 12.301470657994349
+        },
+        "instrumental": {
+          "SDR": 17.975554997242334,
+          "SIR": Infinity,
+          "SAR": 18.156016397880588
+        }
+      }
+    },
+    {
+      "track": "Side Effects Project - Sing With Me",
+      "duration": 6.8,
+      "time": 1.4027678966522217,
+      "results": {
+        "vocals": {
+          "SDR": 15.485719118164353,
+          "SIR": Infinity,
+          "SAR": 15.444484178858879
+        },
+        "instrumental": {
+          "SDR": 17.762010983178563,
+          "SIR": Infinity,
+          "SAR": 17.884169160640926
+        }
+      }
+    },
+    {
+      "track": "Signe Jakobsen - What Have You Done To Me",
+      "duration": 6.8,
+      "time": 1.4263484477996826,
+      "results": {
+        "vocals": {
+          "SDR": 9.686157165606485,
+          "SIR": Infinity,
+          "SAR": 10.698014558733206
+        },
+        "instrumental": {
+          "SDR": 12.418139712759032,
+          "SIR": Infinity,
+          "SAR": 12.745410034728598
+        }
+      }
+    },
+    {
+      "track": "Skelpolu - Resurrection",
+      "duration": 6.8,
+      "time": 1.4009499549865723,
+      "results": {
+        "vocals": {
+          "SDR": 0.4511981657677546,
+          "SIR": Infinity,
+          "SAR": -4.764284117288655
+        },
+        "instrumental": {
+          "SDR": 6.44253320751636,
+          "SIR": Infinity,
+          "SAR": 6.262112091101674
+        }
+      }
+    },
+    {
+      "track": "Speak Softly - Broken Man",
+      "duration": 6.8,
+      "time": 1.4087426662445068,
+      "results": {
+        "vocals": {
+          "SDR": 10.69874467259919,
+          "SIR": Infinity,
+          "SAR": 10.678923950301547
+        },
+        "instrumental": {
+          "SDR": 19.886139148161366,
+          "SIR": Infinity,
+          "SAR": 20.534331997653506
+        }
+      }
+    },
+    {
+      "track": "Speak Softly - Like Horses",
+      "duration": 6.8,
+      "time": 1.3987643718719482,
+      "results": {
+        "vocals": {
+          "SDR": 8.249863688676985,
+          "SIR": Infinity,
+          "SAR": 8.213690036448229
+        },
+        "instrumental": {
+          "SDR": 13.01041763456942,
+          "SIR": Infinity,
+          "SAR": 13.4692302513023
+        }
+      }
+    },
+    {
+      "track": "The Doppler Shift - Atrophy",
+      "duration": 6.8,
+      "time": 1.3970539569854736,
+      "results": {
+        "vocals": {
+          "SDR": 9.423039151649713,
+          "SIR": Infinity,
+          "SAR": 9.161020240949558
+        },
+        "instrumental": {
+          "SDR": 13.997997362823234,
+          "SIR": Infinity,
+          "SAR": 13.938187597948646
+        }
+      }
+    },
+    {
+      "track": "The Easton Ellises (Baumi) - SDRNR",
+      "duration": 6.8,
+      "time": 1.3960671424865723,
+      "results": {
+        "vocals": {
+          "SDR": 5.906091200119498,
+          "SIR": Infinity,
+          "SAR": 5.621740486994651
+        },
+        "instrumental": {
+          "SDR": 9.108117294110816,
+          "SIR": Infinity,
+          "SAR": 9.305097392789353
+        }
+      }
+    },
+    {
+      "track": "The Easton Ellises - Falcon 69",
+      "duration": 6.8,
+      "time": 1.3930506706237793,
+      "results": {
+        "vocals": {
+          "SDR": 7.146799818535996,
+          "SIR": Infinity,
+          "SAR": 8.356913770577062
+        },
+        "instrumental": {
+          "SDR": 12.178048533922649,
+          "SIR": Infinity,
+          "SAR": 11.982365878843659
+        }
+      }
+    },
+    {
+      "track": "The Long Wait - Dark Horses",
+      "duration": 6.8,
+      "time": 1.4067261219024658,
+      "results": {
+        "vocals": {
+          "SDR": 11.2973767968656,
+          "SIR": Infinity,
+          "SAR": 11.075801598446747
+        },
+        "instrumental": {
+          "SDR": 15.467148484714384,
+          "SIR": Infinity,
+          "SAR": 15.69773934447539
+        }
+      }
+    },
+    {
+      "track": "The Mountaineering Club - Mallory",
+      "duration": 6.8,
+      "time": 1.468994140625,
+      "results": {
+        "vocals": {
+          "SDR": 10.43025038107174,
+          "SIR": Infinity,
+          "SAR": 10.575728721859099
+        },
+        "instrumental": {
+          "SDR": 16.246985896712516,
+          "SIR": Infinity,
+          "SAR": 18.1301212810989
+        }
+      }
+    },
+    {
+      "track": "The Sunshine Garcia Band - For I Am The Moon",
+      "duration": 6.8,
+      "time": 1.4282472133636475,
+      "results": {
+        "vocals": {
+          "SDR": 14.759742501935587,
+          "SIR": Infinity,
+          "SAR": 14.497516577150567
+        },
+        "instrumental": {
+          "SDR": 18.630318298462484,
+          "SIR": Infinity,
+          "SAR": 18.13096367304753
+        }
+      }
+    },
+    {
+      "track": "Timboz - Pony",
+      "duration": 6.8,
+      "time": 1.4301347732543945,
+      "results": {
+        "vocals": {
+          "SDR": 5.973221526375108,
+          "SIR": Infinity,
+          "SAR": 4.879875744107755
+        },
+        "instrumental": {
+          "SDR": 14.88387552977109,
+          "SIR": Infinity,
+          "SAR": 15.29645031155449
+        }
+      }
+    },
+    {
+      "track": "Tom McKenzie - Directions",
+      "duration": 6.8,
+      "time": 1.4271187782287598,
+      "results": {
+        "vocals": {
+          "SDR": 10.067839897631863,
+          "SIR": Infinity,
+          "SAR": 10.099003988177813
+        },
+        "instrumental": {
+          "SDR": 19.472991298953033,
+          "SIR": Infinity,
+          "SAR": 19.356305587676466
+        }
+      }
+    },
+    {
+      "track": "Triviul feat. The Fiend - Widow",
+      "duration": 6.8,
+      "time": 1.4115827083587646,
+      "results": {
+        "vocals": {
+          "SDR": 11.133459946723425,
+          "SIR": Infinity,
+          "SAR": 10.403827570267968
+        },
+        "instrumental": {
+          "SDR": 10.409716736076872,
+          "SIR": Infinity,
+          "SAR": 12.045107856478706
+        }
+      }
+    },
+    {
+      "track": "We Fell From The Sky - Not You",
+      "duration": 6.8,
+      "time": 1.4096167087554932,
+      "results": {
+        "vocals": {
+          "SDR": 8.37545813487398,
+          "SIR": Infinity,
+          "SAR": 7.86044016014576
+        },
+        "instrumental": {
+          "SDR": 15.198566865067757,
+          "SIR": Infinity,
+          "SAR": 14.969287487417583
+        }
+      }
+    },
+    {
+      "track": "Zeno - Signs",
+      "duration": 6.8,
+      "time": 1.4261395931243896,
+      "results": {
+        "vocals": {
+          "SDR": 11.798597896078991,
+          "SIR": Infinity,
+          "SAR": 11.325456628469674
+        },
+        "instrumental": {
+          "SDR": 13.585977956692489,
+          "SIR": Infinity,
+          "SAR": 13.517842477229465
+        }
+      }
+    }
+  ]
+}

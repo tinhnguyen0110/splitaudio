@@ -1,0 +1,32 @@
+{
+  "audio_file": "/home/watercry/Disk_C/Data/audio-separation/data/test_audio/test_5s.mp3",
+  "audio_duration_sec": 5.003514739229025,
+  "sample_rate": 44100,
+  "chunk_sec": 3.0,
+  "overlap_sec": 0.5,
+  "workers": 2,
+  "torch_version": "2.9.1+cu128",
+  "torch_threads": 10,
+  "results": {
+    "demucs_htdemucs": {
+      "baseline": 3.1325444170070114,
+      "int8": 2.2150707349937875,
+      "int8_chunked": 2.6736220809980296
+    },
+    "demucs_htdemucs_ft": {
+      "baseline": 8.377545657000155,
+      "int8": 8.806487488007406,
+      "int8_chunked": 9.923182373997406
+    },
+    "bs_roformer": {
+      "baseline": 33.662634121996234,
+      "int8": 29.47574651899049,
+      "int8_chunked": 55.96458279200306
+    },
+    "melband_roformer": {
+      "baseline": 25.189137494002352,
+      "int8": 25.422842564003076,
+      "int8_chunked": 45.84221632100525
+    }
+  }
+}

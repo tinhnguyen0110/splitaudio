@@ -1,0 +1,151 @@
+{
+  "label": "MANUAL",
+  "model_serving": [
+    {
+      "model": "demucs",
+      "device": "gpu",
+      "5s": {
+        "time": 0.24,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 1.32,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 2.46,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "demucs_ft",
+      "device": "gpu",
+      "5s": {
+        "time": 0.77,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 4.25,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 7.92,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "bs_roformer",
+      "device": "gpu",
+      "5s": {
+        "time": 1.34,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 3.74,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 7.29,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "melband_roformer",
+      "device": "gpu",
+      "5s": {
+        "time": 1.22,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 3.37,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 6.61,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "demucs",
+      "device": "cpu",
+      "5s": {
+        "time": 1.96,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 11.71,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 20.99,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "demucs_ft",
+      "device": "cpu",
+      "5s": {
+        "time": 7.61,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 44.8,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 81.87,
+        "status": "OK"
+      }
+    }
+  ],
+  "api_e2e": [
+    {
+      "model": "demucs",
+      "device": "gpu",
+      "5s": {
+        "time": 1.9,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 2.13,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 3.14,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "melband_roformer",
+      "device": "gpu",
+      "5s": {
+        "time": 2.16,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 4.16,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 7.73,
+        "status": "OK"
+      }
+    },
+    {
+      "model": "demucs",
+      "device": "cpu",
+      "5s": {
+        "time": 2.6,
+        "status": "OK"
+      },
+      "30s": {
+        "time": 11.97,
+        "status": "OK"
+      },
+      "60s": {
+        "time": 21.29,
+        "status": "OK"
+      }
+    }
+  ]
+}

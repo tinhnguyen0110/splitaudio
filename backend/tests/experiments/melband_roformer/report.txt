@@ -1,0 +1,275 @@
+======================================================================
+MODEL EVALUATION REPORT: MelBand RoFormer (ViperX-1143)
+======================================================================
+Description: Mel-Band RoFormer — best vocal separation quality
+Tracks evaluated: 50
+Available stems: vocals, instrumental
+
+----------------------------------------------------------------------
+PER-TRACK RESULTS
+----------------------------------------------------------------------
+
+  Track: AM Contra - Heart Peripheral
+  Processing time: 1.411s (4.8x realtime)
+            vocals: SDR=  13.53 dB | SIR=    inf dB | SAR=  13.54 dB
+      instrumental: SDR=  15.89 dB | SIR=    inf dB | SAR=  16.33 dB
+
+  Track: Al James - Schoolboy Facination
+  Processing time: 1.422s (4.8x realtime)
+            vocals: SDR=  10.29 dB | SIR=    inf dB | SAR=  10.03 dB
+      instrumental: SDR=  11.09 dB | SIR=    inf dB | SAR=  11.12 dB
+
+  Track: Angels In Amplifiers - I'm Alright
+  Processing time: 1.394s (4.9x realtime)
+            vocals: SDR=  12.11 dB | SIR=    inf dB | SAR=  11.63 dB
+      instrumental: SDR=  13.84 dB | SIR=    inf dB | SAR=  13.77 dB
+
+  Track: Arise - Run Run Run
+  Processing time: 1.423s (4.8x realtime)
+            vocals: SDR=  13.29 dB | SIR=    inf dB | SAR=  13.03 dB
+      instrumental: SDR=  21.75 dB | SIR=    inf dB | SAR=  21.81 dB
+
+  Track: BKS - Bulldozer
+  Processing time: 1.422s (4.8x realtime)
+            vocals: SDR=   7.16 dB | SIR=    inf dB | SAR=   7.83 dB
+      instrumental: SDR=  12.98 dB | SIR=    inf dB | SAR=  13.72 dB
+
+  Track: BKS - Too Much
+  Processing time: 1.416s (4.8x realtime)
+            vocals: SDR=  11.99 dB | SIR=    inf dB | SAR=  11.92 dB
+      instrumental: SDR=  15.74 dB | SIR=    inf dB | SAR=  15.75 dB
+
+  Track: Ben Carrigan - We'll Talk About It All Tonight
+  Processing time: 1.422s (4.8x realtime)
+            vocals: SDR=   7.72 dB | SIR=    inf dB | SAR=   7.42 dB
+      instrumental: SDR=  16.62 dB | SIR=    inf dB | SAR=  16.36 dB
+
+  Track: Bobby Nobody - Stitch Up
+  Processing time: 1.393s (4.9x realtime)
+            vocals: SDR=  11.66 dB | SIR=    inf dB | SAR=  11.68 dB
+      instrumental: SDR=  16.56 dB | SIR=    inf dB | SAR=  16.52 dB
+
+  Track: Buitraker - Revo X
+  Processing time: 1.393s (4.9x realtime)
+            vocals: SDR=   5.82 dB | SIR=    inf dB | SAR=   5.04 dB
+      instrumental: SDR=  13.99 dB | SIR=    inf dB | SAR=  14.06 dB
+
+  Track: Carlos Gonzalez - A Place For Us
+  Processing time: 1.412s (4.8x realtime)
+            vocals: SDR=   8.79 dB | SIR=    inf dB | SAR=   8.79 dB
+      instrumental: SDR=   8.51 dB | SIR=    inf dB | SAR=   8.20 dB
+
+  Track: Cristina Vane - So Easy
+  Processing time: 1.419s (4.8x realtime)
+            vocals: SDR=  17.48 dB | SIR=    inf dB | SAR=  17.66 dB
+      instrumental: SDR=  22.72 dB | SIR=    inf dB | SAR=  22.74 dB
+
+  Track: Detsky Sad - Walkie Talkie
+  Processing time: 1.406s (4.8x realtime)
+            vocals: SDR=  13.01 dB | SIR=    inf dB | SAR=  12.36 dB
+      instrumental: SDR=  15.47 dB | SIR=    inf dB | SAR=  15.25 dB
+
+  Track: Enda Reilly - Cur An Long Ag Seol
+  Processing time: 1.444s (4.7x realtime)
+            vocals: SDR=  14.78 dB | SIR=    inf dB | SAR=  15.50 dB
+      instrumental: SDR=  15.54 dB | SIR=    inf dB | SAR=  17.12 dB
+
+  Track: Forkupines - Semantics
+  Processing time: 1.429s (4.8x realtime)
+            vocals: SDR=   9.79 dB | SIR=    inf dB | SAR=   9.65 dB
+      instrumental: SDR=  13.63 dB | SIR=    inf dB | SAR=  13.74 dB
+
+  Track: Georgia Wonder - Siren
+  Processing time: 1.432s (4.7x realtime)
+            vocals: SDR=   9.17 dB | SIR=    inf dB | SAR=   8.37 dB
+      instrumental: SDR=  11.46 dB | SIR=    inf dB | SAR=  11.19 dB
+
+  Track: Girls Under Glass - We Feel Alright
+  Processing time: 1.392s (4.9x realtime)
+            vocals: SDR=   6.55 dB | SIR=    inf dB | SAR=   5.38 dB
+      instrumental: SDR=  10.99 dB | SIR=    inf dB | SAR=  11.08 dB
+
+  Track: Hollow Ground - Ill Fate
+  Processing time: 1.416s (4.8x realtime)
+            vocals: SDR=   7.69 dB | SIR=    inf dB | SAR=   6.28 dB
+      instrumental: SDR=  14.06 dB | SIR=    inf dB | SAR=  14.61 dB
+
+  Track: James Elder & Mark M Thompson - The English Actor
+  Processing time: 1.408s (4.8x realtime)
+            vocals: SDR=   7.11 dB | SIR=    inf dB | SAR=   7.32 dB
+      instrumental: SDR=   9.53 dB | SIR=    inf dB | SAR=   9.17 dB
+
+  Track: Juliet's Rescue - Heartbeats
+  Processing time: 1.403s (4.8x realtime)
+            vocals: SDR=  12.80 dB | SIR=    inf dB | SAR=  12.81 dB
+      instrumental: SDR=  19.61 dB | SIR=    inf dB | SAR=  19.86 dB
+
+  Track: Little Chicago's Finest - My Own
+  Processing time: 1.405s (4.8x realtime)
+            vocals: SDR=   9.82 dB | SIR=    inf dB | SAR=   9.90 dB
+      instrumental: SDR=  16.31 dB | SIR=    inf dB | SAR=  16.32 dB
+
+  Track: Louis Cressy Band - Good Time
+  Processing time: 1.397s (4.9x realtime)
+            vocals: SDR=  11.74 dB | SIR=    inf dB | SAR=  11.34 dB
+      instrumental: SDR=  15.71 dB | SIR=    inf dB | SAR=  15.67 dB
+
+  Track: Lyndsey Ollard - Catching Up
+  Processing time: 1.427s (4.8x realtime)
+            vocals: SDR=  14.54 dB | SIR=    inf dB | SAR=  14.68 dB
+      instrumental: SDR=  16.49 dB | SIR=    inf dB | SAR=  16.83 dB
+
+  Track: M.E.R.C. Music - Knockout
+  Processing time: 1.393s (4.9x realtime)
+            vocals: SDR=   9.90 dB | SIR=    inf dB | SAR=   9.97 dB
+      instrumental: SDR=  12.15 dB | SIR=    inf dB | SAR=  12.28 dB
+
+  Track: Moosmusic - Big Dummy Shake
+  Processing time: 1.406s (4.8x realtime)
+            vocals: SDR=  14.46 dB | SIR=    inf dB | SAR=  15.47 dB
+      instrumental: SDR=  16.10 dB | SIR=    inf dB | SAR=  17.83 dB
+
+  Track: Motor Tapes - Shore
+  Processing time: 1.422s (4.8x realtime)
+            vocals: SDR=   0.86 dB | SIR=    inf dB | SAR=  -4.17 dB
+      instrumental: SDR=  11.75 dB | SIR=    inf dB | SAR=   9.38 dB
+
+  Track: Mu - Too Bright
+  Processing time: 1.397s (4.9x realtime)
+            vocals: SDR=  16.28 dB | SIR=    inf dB | SAR=  15.99 dB
+      instrumental: SDR=  18.99 dB | SIR=    inf dB | SAR=  20.64 dB
+
+  Track: Nerve 9 - Pray For The Rain
+  Processing time: 1.405s (4.8x realtime)
+            vocals: SDR=   9.54 dB | SIR=    inf dB | SAR=   9.82 dB
+      instrumental: SDR=  10.98 dB | SIR=    inf dB | SAR=  11.02 dB
+
+  Track: PR - Happy Daze
+  Processing time: 1.403s (4.8x realtime)
+            vocals: SDR=   1.72 dB | SIR=    inf dB | SAR=   2.71 dB
+      instrumental: SDR=  27.68 dB | SIR=    inf dB | SAR=  28.12 dB
+
+  Track: PR - Oh No
+  Processing time: 1.413s (4.8x realtime)
+            vocals: SDR=   1.71 dB | SIR=    inf dB | SAR=   3.32 dB
+      instrumental: SDR=   8.94 dB | SIR=    inf dB | SAR=  20.50 dB
+
+  Track: Punkdisco - Oral Hygiene
+  Processing time: 1.398s (4.9x realtime)
+            vocals: SDR=  12.61 dB | SIR=    inf dB | SAR=  12.77 dB
+      instrumental: SDR=  18.42 dB | SIR=    inf dB | SAR=  18.66 dB
+
+  Track: Raft Monk - Tiring
+  Processing time: 1.400s (4.9x realtime)
+            vocals: SDR=   7.71 dB | SIR=    inf dB | SAR=   7.22 dB
+      instrumental: SDR=  13.82 dB | SIR=    inf dB | SAR=  14.05 dB
+
+  Track: Sambasevam Shanmugam - Kaathaadi
+  Processing time: 1.428s (4.8x realtime)
+            vocals: SDR=  14.10 dB | SIR=    inf dB | SAR=  13.96 dB
+      instrumental: SDR=  19.55 dB | SIR=    inf dB | SAR=  20.05 dB
+
+  Track: Secretariat - Borderline
+  Processing time: 1.409s (4.8x realtime)
+            vocals: SDR=  10.93 dB | SIR=    inf dB | SAR=  10.78 dB
+      instrumental: SDR=  12.10 dB | SIR=    inf dB | SAR=  12.19 dB
+
+  Track: Secretariat - Over The Top
+  Processing time: 1.389s (4.9x realtime)
+            vocals: SDR=  12.27 dB | SIR=    inf dB | SAR=  12.30 dB
+      instrumental: SDR=  17.98 dB | SIR=    inf dB | SAR=  18.16 dB
+
+  Track: Side Effects Project - Sing With Me
+  Processing time: 1.403s (4.8x realtime)
+            vocals: SDR=  15.49 dB | SIR=    inf dB | SAR=  15.44 dB
+      instrumental: SDR=  17.76 dB | SIR=    inf dB | SAR=  17.88 dB
+
+  Track: Signe Jakobsen - What Have You Done To Me
+  Processing time: 1.426s (4.8x realtime)
+            vocals: SDR=   9.69 dB | SIR=    inf dB | SAR=  10.70 dB
+      instrumental: SDR=  12.42 dB | SIR=    inf dB | SAR=  12.75 dB
+
+  Track: Skelpolu - Resurrection
+  Processing time: 1.401s (4.9x realtime)
+            vocals: SDR=   0.45 dB | SIR=    inf dB | SAR=  -4.76 dB
+      instrumental: SDR=   6.44 dB | SIR=    inf dB | SAR=   6.26 dB
+
+  Track: Speak Softly - Broken Man
+  Processing time: 1.409s (4.8x realtime)
+            vocals: SDR=  10.70 dB | SIR=    inf dB | SAR=  10.68 dB
+      instrumental: SDR=  19.89 dB | SIR=    inf dB | SAR=  20.53 dB
+
+  Track: Speak Softly - Like Horses
+  Processing time: 1.399s (4.9x realtime)
+            vocals: SDR=   8.25 dB | SIR=    inf dB | SAR=   8.21 dB
+      instrumental: SDR=  13.01 dB | SIR=    inf dB | SAR=  13.47 dB
+
+  Track: The Doppler Shift - Atrophy
+  Processing time: 1.397s (4.9x realtime)
+            vocals: SDR=   9.42 dB | SIR=    inf dB | SAR=   9.16 dB
+      instrumental: SDR=  14.00 dB | SIR=    inf dB | SAR=  13.94 dB
+
+  Track: The Easton Ellises (Baumi) - SDRNR
+  Processing time: 1.396s (4.9x realtime)
+            vocals: SDR=   5.91 dB | SIR=    inf dB | SAR=   5.62 dB
+      instrumental: SDR=   9.11 dB | SIR=    inf dB | SAR=   9.31 dB
+
+  Track: The Easton Ellises - Falcon 69
+  Processing time: 1.393s (4.9x realtime)
+            vocals: SDR=   7.15 dB | SIR=    inf dB | SAR=   8.36 dB
+      instrumental: SDR=  12.18 dB | SIR=    inf dB | SAR=  11.98 dB
+
+  Track: The Long Wait - Dark Horses
+  Processing time: 1.407s (4.8x realtime)
+            vocals: SDR=  11.30 dB | SIR=    inf dB | SAR=  11.08 dB
+      instrumental: SDR=  15.47 dB | SIR=    inf dB | SAR=  15.70 dB
+
+  Track: The Mountaineering Club - Mallory
+  Processing time: 1.469s (4.6x realtime)
+            vocals: SDR=  10.43 dB | SIR=    inf dB | SAR=  10.58 dB
+      instrumental: SDR=  16.25 dB | SIR=    inf dB | SAR=  18.13 dB
+
+  Track: The Sunshine Garcia Band - For I Am The Moon
+  Processing time: 1.428s (4.8x realtime)
+            vocals: SDR=  14.76 dB | SIR=    inf dB | SAR=  14.50 dB
+      instrumental: SDR=  18.63 dB | SIR=    inf dB | SAR=  18.13 dB
+
+  Track: Timboz - Pony
+  Processing time: 1.430s (4.8x realtime)
+            vocals: SDR=   5.97 dB | SIR=    inf dB | SAR=   4.88 dB
+      instrumental: SDR=  14.88 dB | SIR=    inf dB | SAR=  15.30 dB
+
+  Track: Tom McKenzie - Directions
+  Processing time: 1.427s (4.8x realtime)
+            vocals: SDR=  10.07 dB | SIR=    inf dB | SAR=  10.10 dB
+      instrumental: SDR=  19.47 dB | SIR=    inf dB | SAR=  19.36 dB
+
+  Track: Triviul feat. The Fiend - Widow
+  Processing time: 1.412s (4.8x realtime)
+            vocals: SDR=  11.13 dB | SIR=    inf dB | SAR=  10.40 dB
+      instrumental: SDR=  10.41 dB | SIR=    inf dB | SAR=  12.05 dB
+
+  Track: We Fell From The Sky - Not You
+  Processing time: 1.410s (4.8x realtime)
+            vocals: SDR=   8.38 dB | SIR=    inf dB | SAR=   7.86 dB
+      instrumental: SDR=  15.20 dB | SIR=    inf dB | SAR=  14.97 dB
+
+  Track: Zeno - Signs
+  Processing time: 1.426s (4.8x realtime)
+            vocals: SDR=  11.80 dB | SIR=    inf dB | SAR=  11.33 dB
+      instrumental: SDR=  13.59 dB | SIR=    inf dB | SAR=  13.52 dB
+
+----------------------------------------------------------------------
+AGGREGATE RESULTS (median across all tracks)
+----------------------------------------------------------------------
+    instrumental: SDR=  15.04 dB (mean=14.91, std=3.95) | SIR=    inf dB | SAR=  15.27 dB
+          vocals: SDR=  10.18 dB (mean=10.00, std=3.81) | SIR=    inf dB | SAR=  10.25 dB
+
+----------------------------------------------------------------------
+PERFORMANCE
+----------------------------------------------------------------------
+  Total audio:       340.0s
+  Total processing:  70.6s
+  Avg per track:     1.412s
+  Realtime factor:   4.8x
+  GPU:               NVIDIA GeForce RTX 3060

@@ -1,0 +1,60 @@
+{
+  "audio_file": "/home/watercry/Disk_C/Data/audio-separation/data/test_audio/part1.mp3",
+  "audio_duration_sec": 59.99126984126984,
+  "torch_version": "2.9.1+cu128",
+  "torch_threads": 10,
+  "results": [
+    {
+      "model": "demucs_htdemucs",
+      "display_name": "Demucs HTDemucs",
+      "strategy": "INT8 + chunked (30s, 4 workers)",
+      "duration_sec": 59.99126984126984,
+      "load_sec": 0.28969857799529564,
+      "inference_sec": 15.342399959001341,
+      "realtime_factor": 3.910162034726069,
+      "vocals_path": "/tmp/smart_output_60s/demucs_htdemucs/vocals.wav",
+      "instrumental_path": "/tmp/smart_output_60s/demucs_htdemucs/instrumental.wav",
+      "baseline_sec": 21.924385955993785,
+      "speedup": 1.429006284191595
+    },
+    {
+      "model": "demucs_htdemucs_ft",
+      "display_name": "Demucs HTDemucs FT",
+      "strategy": "FP32 + chunked (30s, 4 workers)",
+      "duration_sec": 59.99126984126984,
+      "load_sec": 0.6619057240022812,
+      "inference_sec": 65.01589051699557,
+      "realtime_factor": 0.9227170367771512,
+      "vocals_path": "/tmp/smart_output_60s/demucs_htdemucs_ft/vocals.wav",
+      "instrumental_path": "/tmp/smart_output_60s/demucs_htdemucs_ft/instrumental.wav",
+      "baseline_sec": 84.10075856100593,
+      "speedup": 1.2935415925591522
+    },
+    {
+      "model": "bs_roformer",
+      "display_name": "BS-RoFormer",
+      "strategy": "INT8 + full-audio",
+      "duration_sec": 59.99126984126984,
+      "load_sec": 1.7161709030042402,
+      "inference_sec": 179.11834989199997,
+      "realtime_factor": 0.33492531545451254,
+      "vocals_path": "/tmp/smart_output_60s/bs_roformer/vocals.wav",
+      "instrumental_path": "/tmp/smart_output_60s/bs_roformer/instrumental.wav",
+      "baseline_sec": 231.21450677399116,
+      "speedup": 1.290847682068324
+    },
+    {
+      "model": "melband_roformer",
+      "display_name": "MelBand RoFormer",
+      "strategy": "INT8 + full-audio",
+      "duration_sec": 59.99126984126984,
+      "load_sec": 2.372434338001767,
+      "inference_sec": 143.82260679500178,
+      "realtime_factor": 0.4171198894119523,
+      "vocals_path": "/tmp/smart_output_60s/melband_roformer/vocals.wav",
+      "instrumental_path": "/tmp/smart_output_60s/melband_roformer/instrumental.wav",
+      "baseline_sec": 167.26630238899088,
+      "speedup": 1.1630042461085737
+    }
+  ]
+}

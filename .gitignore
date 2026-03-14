@@ -1,0 +1,36 @@
+# Environment & secrets
+.env
+.env.test
+.env.docker
+docs/accounts.txt
+docs/guildlines.docx
+# Data (too large for git)
+data/model_weights/
+data/minio_data/
+data/output_local/
+data/test_audio/musdb18/
+data/test_audio/*.mp3
+backend/model_serving/weights/
+
+# Python
+venv_test/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE & tools
+.agents/
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

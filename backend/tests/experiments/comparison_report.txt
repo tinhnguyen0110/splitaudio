@@ -1,0 +1,52 @@
+==========================================================================================
+MODEL COMPARISON REPORT — Audio Separation Evaluation
+==========================================================================================
+Date: 2026-03-13 19:24:28
+GPU: NVIDIA GeForce RTX 3060
+
+------------------------------------------------------------------------------------------
+VOCALS SEPARATION QUALITY (SDR dB — higher is better)
+------------------------------------------------------------------------------------------
+  Model                                 Median SDR   Mean SDR      Std      Speed
+  ----------------------------------- ------------ ---------- -------- ----------
+  Demucs v4 HTDemucs                        9.08 dB     8.47 dB   3.55     24.6x RT
+  Demucs v4 HTDemucs FT                     8.63 dB     8.39 dB   4.16      6.3x RT
+  BS-RoFormer (ViperX-1297)                12.39 dB    11.35 dB   4.42      3.4x RT
+  MelBand RoFormer (ViperX-1143)           10.18 dB    10.00 dB   3.81      4.8x RT
+
+------------------------------------------------------------------------------------------
+INSTRUMENTAL SEPARATION QUALITY (SDR dB — higher is better)
+------------------------------------------------------------------------------------------
+  Model                                 Median SDR   Mean SDR      Speed
+  ----------------------------------- ------------ ---------- ----------
+  Demucs v4 HTDemucs                       13.81 dB    13.46 dB     24.6x RT
+  Demucs v4 HTDemucs FT                    12.93 dB    12.73 dB      6.3x RT
+  BS-RoFormer (ViperX-1297)                15.76 dB    16.17 dB      3.4x RT
+  MelBand RoFormer (ViperX-1143)           15.04 dB    14.91 dB      4.8x RT
+
+------------------------------------------------------------------------------------------
+4-STEM BREAKDOWN (Demucs models only)
+------------------------------------------------------------------------------------------
+  Model                              Vocals      Drums       Bass      Other
+  ------------------------------ ---------- ---------- ---------- ----------
+  Demucs v4 HTDemucs                 9.08 dB     9.52 dB     9.57 dB     5.73 dB
+  Demucs v4 HTDemucs FT              8.63 dB     9.45 dB     9.81 dB     5.66 dB
+
+------------------------------------------------------------------------------------------
+PERFORMANCE COMPARISON
+------------------------------------------------------------------------------------------
+  Model                                Avg/Track  RT Factor   GPU VRAM
+  ----------------------------------- ---------- ---------- ----------
+  Demucs v4 HTDemucs                     0.277s     24.6x      ~4 GB
+  Demucs v4 HTDemucs FT                  1.074s      6.3x      ~4 GB
+  BS-RoFormer (ViperX-1297)              2.028s      3.4x      ~4 GB
+  MelBand RoFormer (ViperX-1143)         1.412s      4.8x      ~4 GB
+
+==========================================================================================
+RECOMMENDATIONS
+==========================================================================================
+  Best vocal quality:  BS-RoFormer (ViperX-1297) (SDR: 12.39 dB)
+  Fastest processing:  Demucs v4 HTDemucs (24.6x realtime)
+
+  Fast mode (production):   Use Demucs v4 HTDemucs for speed + 4-stem support
+  Quality mode (premium):   Use MelBand/BS-RoFormer for best vocal separation
