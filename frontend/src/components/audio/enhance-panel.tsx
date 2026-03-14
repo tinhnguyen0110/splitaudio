@@ -268,10 +268,10 @@ export default function EnhancePanel({
   stems: Record<string, string> | null | undefined;
   onEnhanced?: (url: string | null, stemType: string) => void;
 }) {
-  const { t } = useTranslation();
+  const { t: _t } = useTranslation();
   const [selectedStem, setSelectedStem] = useState<string>('vocals');
   const [steps, setSteps] = useState<StepState[]>(createInitialSteps);
-  const [enhancedUrl, setEnhancedUrl] = useState<string | null>(null);
+  const [_enhancedUrl, setEnhancedUrl] = useState<string | null>(null);
 
   const { mutate, isPending } = useEnhanceStem();
 
