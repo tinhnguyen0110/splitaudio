@@ -2,6 +2,8 @@
 
 A full-stack audio separation platform with a React frontend and microservices backend for AI-powered vocal and instrumental separation using state-of-the-art ML models (Demucs v4 and Mel-Band RoFormer). Users upload audio files through a modern web UI, spend credits per separation, and download the separated stems via pre-signed MinIO URLs.
 
+![Separate Audio](docs/images/04-separate-demucs-cpu-toggle.png)
+
 ---
 
 ## Architecture
