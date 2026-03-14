@@ -1,6 +1,6 @@
 # Audio Separation Service
 
-A full-stack audio separation platform with a React frontend and microservices backend for AI-powered vocal and instrumental separation using state-of-the-art ML models (Demucs v4 and Mel-Band RoFormer). Users upload audio files through a modern web UI, spend credits per separation, and download the separated stems via pre-signed MinIO URLs.
+A full-stack audio separation platform with a React frontend and microservices backend for AI-powered vocal and instrumental separation using state-of-the-art ML models (Demucs v4 and Mel-Band RoFormer). Users upload audio files through a modern web UI, spend credits per separation, download separated stems, and optionally enhance audio quality with a configurable 7-step post-processing pipeline.
 
 ![Separate Audio](docs/images/04-separate-demucs-cpu-toggle.png)
 
@@ -93,8 +93,9 @@ A full-stack audio separation platform with a React frontend and microservices b
 | Object Storage | MinIO (S3-compatible) |
 | Database | PostgreSQL 15 |
 | ML Models | Demucs v4, Mel-Band RoFormer |
-| ML Framework | PyTorch 2.1 (CUDA-optional) |
+| ML Framework | PyTorch 2.10 (CUDA 12.8) |
 | Audio I/O | torchaudio, soundfile, mutagen |
+| Post-Processing | noisereduce, pyloudnorm, scipy |
 
 ### Frontend
 
@@ -197,11 +198,11 @@ The Worker communicates with Model Serving via a simple REST call:
 ```
 Worker                          Model Serving (:8001)
   │                                     │
-  │  POST /predict?model=demucs         │
+  │  POST /predict?model=demucs&device=gpu
   │  Content-Type: multipart/form-data  │
   │  Body: file=<audio bytes>           │
   │────────────────────────────────────►│
-  │                                     │  Run inference (FP16, GPU if available)
+  │                                     │  Run inference (FP16/INT8, GPU/CPU)
   │                                     │  Semaphore limits concurrency to 2
   │  200 OK                             │
   │  Content-Type: application/zip      │
@@ -216,6 +217,26 @@ The inference semaphore (`asyncio.Semaphore(2)`) in model-serving prevents OOM u
 
 ---
 
+## Audio Enhancement (Post-Processing)
+
+After separation, users can enhance stem quality with a configurable pipeline accessible from the task detail page:
+
+| Step | Description | Default (Light) |
+|---|---|---|
+| **Silence Gate** | Reduce noise in silent sections using energy threshold | Enabled |
+| **Spectral Denoise** | Spectral gating to remove musical noise & artifacts | Enabled |
+| **High-Freq Restore** | Detect and restore lost high frequencies (sibilance, air) | Disabled |
+| **Artifact Smoothing** | Median filter on spectrogram to smooth residual noise | Disabled |
+| **Mixture Consistency** | Ensure vocal + instrumental = original after processing | Disabled |
+| **Loudness Normalize** | ITU-R BS.1770 loudness normalization (LUFS target) | Enabled |
+| **AI Denoise** | Deep neural network denoising (coming soon) | Disabled |
+
+**Presets:** Light (3 steps), Medium (5 steps), Max (6 steps)
+
+Each step has configurable parameters (thresholds, filter sizes, target LUFS, etc.) that can be tuned via the UI. Enhancement is free and runs synchronously — the API returns enhanced WAV directly.
+
+---
+
 ## Frontend Features
 
 The React TypeScript frontend provides a comprehensive user interface with the following features:
@@ -226,9 +247,9 @@ The React TypeScript frontend provides a comprehensive user interface with the f
 |---|---|---|
 | **Auth** | `/login`, `/register` | User registration with welcome credits, JWT login, token refresh |
 | **Dashboard** | `/` | Quick upload widget, recent tasks, credit balance card |
-| **Separate** | `/separate` | Multi-model selector (Demucs, RoFormer), file upload with progress, drag & drop |
+| **Separate** | `/separate` | Multi-model selector (Demucs, RoFormer), file upload with progress, drag & drop, GPU/CPU device toggle (admin) |
 | **History** | `/history` | Paginated task list, status filters, search, retry failed jobs |
-| **Task Detail** | `/task/:id` | Real-time status updates, stem download buttons, audio player, waveform display |
+| **Task Detail** | `/task/:id` | Tab-based layout (Overview / Audio & Enhance), real-time status, audio players, post-processing pipeline with configurable steps |
 | **Profile** | `/profile` | Edit display name/email, change password, language switcher, account deletion |
 | **Credits** | `/credits` | Balance overview, transaction history, purchase/redeem flows |
 
@@ -287,13 +308,14 @@ The React TypeScript frontend provides a comprehensive user interface with the f
 | PUT | `/api/v1/users/me` | Bearer | Update display name or email |
 | DELETE | `/api/v1/users/me` | Bearer | Delete account (cascades all data) |
 | **Separation** | | | |
-| POST | `/api/v1/separate` | Bearer | Upload audio file, queue separation job |
+| POST | `/api/v1/separate` | Bearer | Upload audio file, queue separation job (params: model, device) |
 | **Tasks** | | | |
 | GET | `/api/v1/status/{task_id}` | Bearer | Get task status + download URLs |
 | GET | `/api/v1/history` | Bearer | Paginated task history |
 | DELETE | `/api/v1/tasks/{task_id}` | Bearer | Cancel pending task + refund credits |
 | POST | `/api/v1/tasks/{task_id}/retry` | Bearer | Retry a failed task |
 | GET | `/api/v1/tasks/{task_id}/download/{stem}` | Bearer | Redirect to pre-signed download URL |
+| POST | `/api/v1/tasks/{task_id}/enhance` | Bearer | Enhance a stem with post-processing pipeline |
 | **Credits** | | | |
 | GET | `/api/v1/credits/balance` | Bearer | Current credit balance + stats |
 | GET | `/api/v1/credits/transactions` | Bearer | Paginated transaction history |
@@ -426,9 +448,13 @@ Credits are deducted **before** work begins and refunded **on any failure**:
 
 | Strategy | Implementation |
 |---|---|
-| **FP16 inference** | Both `DemucsHandler` and `RoFormerHandler` cast models to `torch.float16` when CUDA is available, halving GPU memory and increasing throughput |
+| **FP16 inference** | `use_autocast=True` in Separator for RoFormer models on GPU, halving memory and ~2x speedup |
+| **INT8 quantization** | `torch.quantization.quantize_dynamic` for CPU mode — reduces model size and improves CPU inference speed |
+| **Device selection** | API supports `device=gpu|cpu|auto` parameter; admin users can toggle GPU/CPU in the UI for Demucs models |
 | **Warm models** | Models are loaded once at startup via `lifespan` and held in the `_handlers` dict; there is no per-request load/unload overhead |
+| **Lazy CPU handlers** | CPU-optimized model copies are loaded on first CPU request (thread-safe with double-check locking) |
 | **Inference serialisation** | `asyncio.Semaphore(2)` prevents concurrent inference from exhausting GPU VRAM |
+| **Post-processing** | Optional 6-step audio enhancement pipeline (silence gate, spectral denoise, high-freq restore, artifact smoothing, mixture consistency, loudness normalization) runs synchronously on enhanced stems |
 | **Result caching** (future) | Output stems are stored permanently in MinIO — re-processing the same file could be short-circuited by hashing the input key |
 | **ONNX export** (future) | Both model architectures are ONNX-exportable; converting to ONNX + TensorRT would give 2–4× inference speedup on NVIDIA GPUs |
 | **CPU fallback** | Both handlers detect `torch.cuda.is_available()` and fall back to CPU when no GPU is present, so the service runs on CPU-only machines |
@@ -461,7 +487,18 @@ audio-separation/
 │   │   │   ├── separate.py     # /api/v1/separate
 │   │   │   ├── tasks.py        # /api/v1/status|history|tasks/*
 │   │   │   ├── credits.py      # /api/v1/credits/*
+│   │   │   ├── enhance.py      # /api/v1/tasks/{id}/enhance
 │   │   │   └── admin.py        # /api/v1/admin/*
+│   │   ├── postprocess/        # Audio post-processing pipeline
+│   │   │   ├── __init__.py
+│   │   │   ├── pipeline.py         # Pipeline orchestrator
+│   │   │   ├── step1_silence_gate.py
+│   │   │   ├── step2_spectral_denoise.py
+│   │   │   ├── step3_highfreq_restore.py
+│   │   │   ├── step4_artifact_smooth.py
+│   │   │   ├── step5_mixture_consistency.py
+│   │   │   ├── step6_loudness_norm.py
+│   │   │   └── step7_ai_denoise.py  # Placeholder
 │   │   ├── services/           # Business logic
 │   │   │   ├── auth_service.py     # JWT + bcrypt
 │   │   │   ├── credit_service.py   # Atomic credit operations
@@ -506,7 +543,7 @@ audio-separation/
 │       │   ├── credits/        # Balance card, transactions
 │       │   ├── profile/        # User settings, password, language
 │       │   ├── admin/          # User management, stats, tracing
-│       │   ├── audio/          # Audio player, waveform display
+│       │   ├── audio/          # Audio player, enhance panel, post-processing config
 │       │   ├── layout/         # Navigation, topbar, mobile nav
 │       │   ├── common/         # Shared components (error boundary, pagination)
 │       │   └── ui/             # Radix UI primitives (card, dialog, table, etc.)
@@ -547,7 +584,7 @@ audio-separation/
 ├── Makefile                    # Development commands
 ├── .env.example
 ├── .env.docker
-└── .env.test
+└── .env
 ```
 
 ---

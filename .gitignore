@@ -11,6 +11,7 @@ data/output_local/
 data/test_audio/musdb18/
 data/test_audio/*.mp3
 backend/model_serving/weights/
+*.wav
 
 # Python
 venv_test/

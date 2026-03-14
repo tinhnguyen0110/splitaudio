@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from config import settings
 from middleware.rate_limiter import RateLimiter
 from middleware.request_logger import RequestLogger
-from routers import auth, users, separate, tasks, credits, admin
+from routers import auth, users, separate, tasks, credits, admin, enhance
 
 logging.basicConfig(level=settings.LOG_LEVEL)
 logger = logging.getLogger(__name__)
@@ -44,6 +44,7 @@ app.include_router(separate.router, prefix="/api/v1")
 app.include_router(tasks.router, prefix="/api/v1")
 app.include_router(credits.router, prefix="/api/v1")
 app.include_router(admin.router, prefix="/api/v1")
+app.include_router(enhance.router, prefix="/api/v1")
 
 
 @app.get("/health", tags=["health"])

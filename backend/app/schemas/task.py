@@ -87,3 +87,15 @@ class PurchaseRequest(BaseModel):
 
 class RedeemRequest(BaseModel):
     code: str
+
+
+# ── Enhance schemas ──────────────────────────────────────────────────────────
+
+class EnhanceStepConfig(BaseModel):
+    step_id: str
+    params: dict = {}
+
+
+class EnhanceRequest(BaseModel):
+    stem_type: str  # "vocals" or "instrumental"
+    steps: List[EnhanceStepConfig]
